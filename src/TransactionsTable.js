@@ -4,24 +4,22 @@ import {useTable, usePagination, useFilters, useGlobalFilter} from 'react-table'
 // Компоненты из react-table оказались сложными для понимания с первого взгляда.
 // Поэтому я решил сильно не углубляться в функциональность и остановился на "простом" использовании.
 
-// Эта функция необходима для определения глобального фильтра. Её я просто скопировал из примера react-table.
+// Эта функция необходима для определения глобального фильтра. Её я скопировал из примера react-table.
 function GlobalFilter({
   preGlobalFilteredRows,
   globalFilter,
   setGlobalFilter,
 }) {
-  const count = preGlobalFilteredRows.length
-
   return (
     <span>
-      Search:{' '}
+      Поиск:{' '}
       <input
         className="table-filter"
         value={globalFilter || ''}
         onChange={e => {
           setGlobalFilter(e.target.value || undefined) // Set undefined to remove the filter entirely
         }}
-        placeholder={`${count} records...`}
+        placeholder={`по всем записям`}
       />
     </span>
   )
@@ -83,7 +81,7 @@ function TransactionsTable({ data }) {
       preGlobalFilteredRows,
       setGlobalFilter,
       flatColumns,
-      state, // И этим state. В react-table не нашёл ответа. Просто так надо. Но так сделано в примере у react-table.
+      state, // И этим state. В react-table не нашёл ответа. Так сделано в примере react-table.
     } = useTable(
       {
         columns,
@@ -135,37 +133,37 @@ function TransactionsTable({ data }) {
       <div className="pagination">
         <div>
             <button type="button" className="btn btn-secondary" onClick={() => gotoPage(0)} disabled={!canPreviousPage}>
-            {'<<'}
+              {'<<'}
             </button>
-            {' '}
+              {' '}
             <button type="button" className="btn btn-secondary" onClick={() => previousPage()} disabled={!canPreviousPage}>
-            {'<'}
+              {'<'}
             </button>
-            {' '}
+              {' '}
             <button type="button" className="btn btn-secondary" onClick={() => nextPage()} disabled={!canNextPage}>
-            {'>'}
+              {'>'}
             </button>
-            {' '}
+              {' '}
             <button type="button" className="btn btn-secondary" onClick={() => gotoPage(pageCount - 1)} disabled={!canNextPage}>
-            {'>>'}
+              {'>>'}
             </button>
         </div>
 
         <div>
-            Page{' '}{pageIndex + 1} of {pageOptions.length}{' '}from{' '}{data.length}{' '}records
+            Страница{' '}{pageIndex + 1} - {pageOptions.length}{' '}из{' '}{data.length}{' '}записей
         </div>
 
         <div>
           <select className="form-control"
             value={pageSize}
             onChange={e => {
-                setPageSize(Number(e.target.value))
+              setPageSize(Number(e.target.value))
             }}
             >
             {[5, 10, 15, 20].map(pageSize => (
-                <option key={pageSize} value={pageSize}>
-                    Show {pageSize}
-                </option>
+              <option key={pageSize} value={pageSize}>
+                Показать {pageSize}
+              </option>
             ))}
           </select>
         </div>
