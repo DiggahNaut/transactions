@@ -1,0 +1,290 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`check TransactionsTable snapshot 1`] = `
+Array [
+  <table
+    className="table table-striped table-hover"
+  >
+    <thead>
+      <tr>
+        <th
+          className="table-cell"
+          colSpan={4}
+        >
+          Список транзакций
+        </th>
+      </tr>
+      <tr>
+        <th
+          className="table-cell"
+          colSpan={1}
+        >
+          Проект
+        </th>
+        <th
+          className="table-cell"
+          colSpan={1}
+        >
+          Способ оплаты
+        </th>
+        <th
+          className="table-cell"
+          colSpan={1}
+        >
+          Пользователь
+        </th>
+        <th
+          className="table-cell"
+          colSpan={1}
+        >
+          Статус транзакции
+        </th>
+      </tr>
+      <tr>
+        <th
+          colSpan={4}
+        >
+          <span>
+            Поиск:
+             
+            <input
+              className="table-filter"
+              onChange={[Function]}
+              placeholder="по всем записям"
+              value=""
+            />
+          </span>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          Red Sauce 3
+        </td>
+        <td>
+          Credit/Debit Cards
+        </td>
+        <td>
+          Jack Black
+        </td>
+        <td>
+          created
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Red Sauce 3
+        </td>
+        <td>
+          QIWI
+        </td>
+        <td>
+          e.polyanina
+        </td>
+        <td>
+          canceled
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Red Sauce 3
+        </td>
+        <td>
+          Credit/Debit Cards
+        </td>
+        <td>
+          Jack Black
+        </td>
+        <td>
+          created
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Red Sauce 3
+        </td>
+        <td>
+          Credit/Debit Cards
+        </td>
+        <td>
+          lester.mosley
+        </td>
+        <td>
+          canceled
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Red Sauce 3
+        </td>
+        <td>
+          Credit/Debit Cards
+        </td>
+        <td>
+          e.polyanina
+        </td>
+        <td>
+          canceled
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Red Sauce 3
+        </td>
+        <td>
+          Credit/Debit Cards
+        </td>
+        <td>
+          lester.mosley
+        </td>
+        <td>
+          canceled
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Red Sauce 3
+        </td>
+        <td>
+          Credit/Debit Cards
+        </td>
+        <td>
+          lester.mosley
+        </td>
+        <td>
+          canceled
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Red Sauce 3
+        </td>
+        <td>
+          Credit/Debit Cards
+        </td>
+        <td>
+          lester.mosley
+        </td>
+        <td>
+          canceled
+        </td>
+      </tr>
+      <tr>
+        <td>
+          God of Peace
+        </td>
+        <td>
+          Credit/Debit Cards
+        </td>
+        <td>
+          john.uniqe
+        </td>
+        <td>
+          canceled
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Super Farm
+        </td>
+        <td>
+          MobileGo
+        </td>
+        <td>
+          karina.newman
+        </td>
+        <td>
+          created
+        </td>
+      </tr>
+    </tbody>
+  </table>,
+  <div
+    className="pagination"
+  >
+    <div>
+      <button
+        className="btn btn-secondary"
+        disabled={true}
+        onClick={[Function]}
+        type="button"
+      >
+        &lt;&lt;
+      </button>
+       
+      <button
+        className="btn btn-secondary"
+        disabled={true}
+        onClick={[Function]}
+        type="button"
+      >
+        &lt;
+      </button>
+       
+      <button
+        className="btn btn-secondary"
+        disabled={false}
+        onClick={[Function]}
+        type="button"
+      >
+        &gt;
+      </button>
+       
+      <button
+        className="btn btn-secondary"
+        disabled={false}
+        onClick={[Function]}
+        type="button"
+      >
+        &gt;&gt;
+      </button>
+    </div>
+    <div>
+      Страница
+       
+      1
+       - 
+      11
+       
+      из
+       
+      101
+       
+      записей
+    </div>
+    <div>
+      <select
+        className="form-control"
+        onChange={[Function]}
+        value={10}
+      >
+        <option
+          value={5}
+        >
+          Показать 
+          5
+        </option>
+        <option
+          value={10}
+        >
+          Показать 
+          10
+        </option>
+        <option
+          value={15}
+        >
+          Показать 
+          15
+        </option>
+        <option
+          value={20}
+        >
+          Показать 
+          20
+        </option>
+      </select>
+    </div>
+  </div>,
+]
+`;

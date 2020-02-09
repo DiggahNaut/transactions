@@ -1,43 +1,11 @@
 import React, {Component} from 'react';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
-import TransactionsTable from './TransactionsTable';
-import ProjectList from './ProjectList';
-import PaymentMethodList from './PaymentMethodList';
-import PaymentChart from './PaymentChart';
+import TransactionsTable from './components/TransactionsTable';
+import ProjectList from './components/ProjectList';
+import PaymentMethodList from './components/PaymentMethodList';
+import PaymentMethodChart from './components/PaymentMethodChart';
 import transactionsData from './transactions.json';
-
-class App extends Component {
-  render() {
-    // paymentData нужны для построения рейтинга и графика платёжных систем.
-    const paymentData = getPaymentData(transactionsData);
-
-    return (
-      <div className="container">
-        <Tabs>
-          <TabList>
-            <Tab>Транзакции</Tab>
-            <Tab>Проекты</Tab>
-            <Tab>Платежные системы</Tab>
-          </TabList>
-
-          <TabPanel>
-            <TransactionsTable data={transactionsData} />
-          </TabPanel>
-
-          <TabPanel>
-            <ProjectList transactionsData={transactionsData} />
-          </TabPanel>
-
-          <TabPanel>
-            <PaymentMethodList paymentData={paymentData} />
-            <PaymentChart paymentData={paymentData} />
-          </TabPanel>
-        </Tabs>
-      </div>
-    )
-  }
-}
 
 // Функция возвращает массив платёжных систем с подсчётом всех совершённых транзакций по каждой системе и сортировкой по убыванию.
 function getPaymentData(props) {
@@ -59,6 +27,40 @@ function getPaymentData(props) {
   }
 
   return paymentMethods.sort((a, b) => b.amountOfUse - a.amountOfUse);
+}
+
+class App extends Component {
+  render() {
+    // paymentData нужны для построения рейтинга и графика платёжных систем.
+    // Решил формировать массив данных для компонентов PaymentMethodList/PaymentMethodChart здесь.
+    // Чтобы не делать этого каждый раз в этих компонентах.
+    const paymentData = getPaymentData(transactionsData);
+
+    return (
+      <div className="container">
+        <Tabs>
+          <TabList>
+            <Tab>Транзакции</Tab>
+            <Tab>Проекты</Tab>
+            <Tab>Платежные системы</Tab>
+          </TabList>
+
+          <TabPanel>
+            <TransactionsTable data={transactionsData} />
+          </TabPanel>
+
+          <TabPanel>
+            <ProjectList transactionsData={transactionsData} />
+          </TabPanel>
+
+          <TabPanel>
+            <PaymentMethodList paymentData={paymentData} />
+            <PaymentMethodChart paymentData={paymentData} />
+          </TabPanel>
+        </Tabs>
+      </div>
+    )
+  }
 }
 
 export default App

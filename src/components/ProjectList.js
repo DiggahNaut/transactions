@@ -38,7 +38,7 @@ class ProjectList extends Component {
                     Выберите интересующий статус транзакции и список проектов изменится на основе статуса.
                 </div>
 
-                <select className="form-control" onChange={this.handleChange} defaultValue="Статус транзакции">
+                <select name="project-statuses" className="form-control" onChange={this.handleChange} defaultValue="Статус транзакции">
                     <option disabled>
                         Статус транзакции
                     </option>

@@ -1,0 +1,356 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`check App snapshot 1`] = `
+<div
+  className="container"
+>
+  <div
+    className="react-tabs"
+    data-tabs={true}
+    onClick={[Function]}
+    onKeyDown={[Function]}
+  >
+    <ul
+      className="react-tabs__tab-list"
+      role="tablist"
+    >
+      <li
+        aria-controls="react-tabs-7"
+        aria-disabled="false"
+        aria-selected="true"
+        className="react-tabs__tab react-tabs__tab--selected"
+        id="react-tabs-6"
+        role="tab"
+        tabIndex="0"
+      >
+        Транзакции
+      </li>
+      <li
+        aria-controls="react-tabs-9"
+        aria-disabled="false"
+        aria-selected="false"
+        className="react-tabs__tab"
+        id="react-tabs-8"
+        role="tab"
+        tabIndex={null}
+      >
+        Проекты
+      </li>
+      <li
+        aria-controls="react-tabs-11"
+        aria-disabled="false"
+        aria-selected="false"
+        className="react-tabs__tab"
+        id="react-tabs-10"
+        role="tab"
+        tabIndex={null}
+      >
+        Платежные системы
+      </li>
+    </ul>
+    <div
+      aria-labelledby="react-tabs-6"
+      className="react-tabs__tab-panel react-tabs__tab-panel--selected"
+      id="react-tabs-7"
+      role="tabpanel"
+    >
+      <table
+        className="table table-striped table-hover"
+      >
+        <thead>
+          <tr>
+            <th
+              className="table-cell"
+              colSpan={4}
+            >
+              Список транзакций
+            </th>
+          </tr>
+          <tr>
+            <th
+              className="table-cell"
+              colSpan={1}
+            >
+              Проект
+            </th>
+            <th
+              className="table-cell"
+              colSpan={1}
+            >
+              Способ оплаты
+            </th>
+            <th
+              className="table-cell"
+              colSpan={1}
+            >
+              Пользователь
+            </th>
+            <th
+              className="table-cell"
+              colSpan={1}
+            >
+              Статус транзакции
+            </th>
+          </tr>
+          <tr>
+            <th
+              colSpan={4}
+            >
+              <span>
+                Поиск:
+                 
+                <input
+                  className="table-filter"
+                  onChange={[Function]}
+                  placeholder="по всем записям"
+                  value=""
+                />
+              </span>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              Red Sauce 3
+            </td>
+            <td>
+              Credit/Debit Cards
+            </td>
+            <td>
+              Jack Black
+            </td>
+            <td>
+              created
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Red Sauce 3
+            </td>
+            <td>
+              QIWI
+            </td>
+            <td>
+              e.polyanina
+            </td>
+            <td>
+              canceled
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Red Sauce 3
+            </td>
+            <td>
+              Credit/Debit Cards
+            </td>
+            <td>
+              Jack Black
+            </td>
+            <td>
+              created
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Red Sauce 3
+            </td>
+            <td>
+              Credit/Debit Cards
+            </td>
+            <td>
+              lester.mosley
+            </td>
+            <td>
+              canceled
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Red Sauce 3
+            </td>
+            <td>
+              Credit/Debit Cards
+            </td>
+            <td>
+              e.polyanina
+            </td>
+            <td>
+              canceled
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Red Sauce 3
+            </td>
+            <td>
+              Credit/Debit Cards
+            </td>
+            <td>
+              lester.mosley
+            </td>
+            <td>
+              canceled
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Red Sauce 3
+            </td>
+            <td>
+              Credit/Debit Cards
+            </td>
+            <td>
+              lester.mosley
+            </td>
+            <td>
+              canceled
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Red Sauce 3
+            </td>
+            <td>
+              Credit/Debit Cards
+            </td>
+            <td>
+              lester.mosley
+            </td>
+            <td>
+              canceled
+            </td>
+          </tr>
+          <tr>
+            <td>
+              God of Peace
+            </td>
+            <td>
+              Credit/Debit Cards
+            </td>
+            <td>
+              john.uniqe
+            </td>
+            <td>
+              canceled
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Super Farm
+            </td>
+            <td>
+              MobileGo
+            </td>
+            <td>
+              karina.newman
+            </td>
+            <td>
+              created
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div
+        className="pagination"
+      >
+        <div>
+          <button
+            className="btn btn-secondary"
+            disabled={true}
+            onClick={[Function]}
+            type="button"
+          >
+            &lt;&lt;
+          </button>
+           
+          <button
+            className="btn btn-secondary"
+            disabled={true}
+            onClick={[Function]}
+            type="button"
+          >
+            &lt;
+          </button>
+           
+          <button
+            className="btn btn-secondary"
+            disabled={false}
+            onClick={[Function]}
+            type="button"
+          >
+            &gt;
+          </button>
+           
+          <button
+            className="btn btn-secondary"
+            disabled={false}
+            onClick={[Function]}
+            type="button"
+          >
+            &gt;&gt;
+          </button>
+        </div>
+        <div>
+          Страница
+           
+          1
+           - 
+          11
+           
+          из
+           
+          101
+           
+          записей
+        </div>
+        <div>
+          <select
+            className="form-control"
+            onChange={[Function]}
+            value={10}
+          >
+            <option
+              value={5}
+            >
+              Показать 
+              5
+            </option>
+            <option
+              value={10}
+            >
+              Показать 
+              10
+            </option>
+            <option
+              value={15}
+            >
+              Показать 
+              15
+            </option>
+            <option
+              value={20}
+            >
+              Показать 
+              20
+            </option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div
+      aria-labelledby="react-tabs-8"
+      className="react-tabs__tab-panel"
+      id="react-tabs-9"
+      role="tabpanel"
+    />
+    <div
+      aria-labelledby="react-tabs-10"
+      className="react-tabs__tab-panel"
+      id="react-tabs-11"
+      role="tabpanel"
+    />
+  </div>
+</div>
+`;

@@ -1,0 +1,98 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`check PaymentMethodList snapshot 1`] = `
+<div
+  className="text-center"
+>
+  <h3>
+    Рейтинг популярности платёжных систем.
+  </h3>
+  <div>
+    Рейтинг строится на основе всех совершенных транзакций платежной системой, независимо от статуса. Рейтинг идёт сверху вниз: от часто используемого к редко используемому. В синем кружке отмечено количество транзакций.
+  </div>
+  <ul
+    className="list-group list"
+  >
+    <li
+      className="list-group-item"
+    >
+      Credit/Debit Cards
+      <span
+        className="badge badge-primary badge-pill"
+      >
+        71
+      </span>
+    </li>
+    <li
+      className="list-group-item"
+    >
+      PayPal
+      <span
+        className="badge badge-primary badge-pill"
+      >
+        15
+      </span>
+    </li>
+    <li
+      className="list-group-item"
+    >
+      Your Balance
+      <span
+        className="badge badge-primary badge-pill"
+      >
+        8
+      </span>
+    </li>
+    <li
+      className="list-group-item"
+    >
+      Webmoney
+      <span
+        className="badge badge-primary badge-pill"
+      >
+        2
+      </span>
+    </li>
+    <li
+      className="list-group-item"
+    >
+      Google Pay
+      <span
+        className="badge badge-primary badge-pill"
+      >
+        2
+      </span>
+    </li>
+    <li
+      className="list-group-item"
+    >
+      QIWI
+      <span
+        className="badge badge-primary badge-pill"
+      >
+        1
+      </span>
+    </li>
+    <li
+      className="list-group-item"
+    >
+      RAZER zGOLD
+      <span
+        className="badge badge-primary badge-pill"
+      >
+        1
+      </span>
+    </li>
+    <li
+      className="list-group-item"
+    >
+      MobileGo
+      <span
+        className="badge badge-primary badge-pill"
+      >
+        1
+      </span>
+    </li>
+  </ul>
+</div>
+`;

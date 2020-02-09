@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`check ProjectList snapshot 1`] = `
+<div
+  className="text-center"
+>
+  <h3>
+    Список проектов, по которым совершались транзакции.
+  </h3>
+  <div>
+    Выберите интересующий статус транзакции и список проектов изменится на основе статуса.
+  </div>
+  <select
+    className="form-control"
+    defaultValue="Статус транзакции"
+    name="project-statuses"
+    onChange={[Function]}
+  >
+    <option
+      disabled={true}
+    >
+      Статус транзакции
+    </option>
+    <option
+      value="created"
+    >
+      Новая
+    </option>
+    <option
+      value="done"
+    >
+      Успешная
+    </option>
+    <option
+      value="canceled"
+    >
+      Отмененная
+    </option>
+  </select>
+  <ul
+    className="list-group list"
+  >
+    
+  </ul>
+</div>
+`;

@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import CanvasJSReact from './canvasjs.react';
+import CanvasJSReact from '../third-party/canvasjs.react';
 var CanvasJSChart = CanvasJSReact.CanvasJSChart;
 
 function getOptionsForChart(props) {
@@ -39,7 +39,7 @@ function getOptionsForChart(props) {
 // Потратил пару вечеров на освоение react-charts(от того же разработчика react-table) и оказалась сложным для понимания.
 // Поэтому решил найти другой вариант для графика. CanvasJS оказался проще и понятнее.
 // Плюс она поддерживается и используется в разных инструментах не только в React'е.
-class PaymentChart extends Component {
+class PaymentChart extends Component {	
 	render() {
 		const options = getOptionsForChart(this.props);
         
